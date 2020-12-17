@@ -65,6 +65,9 @@
     position: relative;
     margin-right: 20px;
 }
+.catalog__img{
+    background-color: #000;
+}
 .catalog__block:first-child{
     margin-bottom: 20px;
 }
@@ -159,9 +162,6 @@
     margin-bottom: 0;
     margin-top: -2px;
 }
-
-
-
 
 
 

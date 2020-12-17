@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.min.css"> </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -63,7 +64,7 @@
                        <div class="intro__item">
                         <h1 class="intro__title">The ooh noo collection</h1>
                         <p class="intro__subtitle">Designed in Slovenia</p>
-                        <a class="intro__button-link" href="#">Explore now</a>
+                        <button class="intro__button-link">Explore now</button>
                         </div>
                    </div>
                    
@@ -115,7 +116,7 @@
             <div class="container"> 
               <div class="delivery__wrapper">
               <div class="delivery__logo">
-               <img src="images/deliver.png" alt="deliver-logo" width="480" height="559">
+               <img class="delivery__img" src="images/deliver.png" alt="deliver-logo" width="480" height="559">
                </div>
                 <div class="delivery__content">
                     <h2 class="delivery__title">Delivery</h2>
@@ -135,7 +136,7 @@
            <h2 class="partners__title">Partners</h2>
             <div class="container">
                 <ul class="partners__list">
-                    <li class="partners__sponsors"> <img src="images/partners/partners1.png" alt="partners-logo1" width="193" height="60"> </li>
+                    <li class="partners__sponsors"> <img   src="images/partners/partners1.png" alt="partners-logo1" width="193" height="60"> </li>
                     <li class="partners__sponsors"> <img src="images/partners/partners2.png" alt="partners-logo2" width="179" height="61"> </li>
                     <li class="partners__sponsors"> <img src="images/partners/partners3.png" alt="partners-logo3" width="216" height="46"> </li>
                     <li class="partners__sponsors"> <img src="images/partners/partners4.png" alt="partners-logo4" width="211" height="40"> </li>
@@ -158,9 +159,9 @@
                     <h2 class="map__title-cont">Contacts</h2>
                     <p class="map__text-cont">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                    </div>
-                     </div>
+                     
                    <img class="map__img" src="images/map.png" alt="map-logo" width="483" height="196">
-           
+           </div>
                 </div>
             </div>
         </section>
@@ -228,27 +229,34 @@
    <div class="footer__bottom">
     <div class="footer__bottom-rating">
        
-        <fieldset class="footer__rating">
-         
-         <legend class="footer__caption">Company Rating</legend>
-         
-         <div class="footer__grup">
-             
-            <input class="footer__star" type="radio" name="star" value="1" aria-label="Ужасно">
-            <input class="footer__star" type="radio" name="star" value="2" aria-label="Сносно">
-            <input class="footer__star" type="radio" name="star" value="3" aria-label="Нормально">
-            <input class="footer__star" type="radio" name="star" value="4" aria-label="Хорошо">
-            <input class="footer__star" type="radio" name="star" value="5" aria-label="Отлично">
-            <div class="footer__focus"></div>
-         </div>
+       <fieldset class="footer__rating">
         
+         <div class="footer__rating-grup">
+          
+           <span class="visually__hidden">Company Rating</span>
+         
+            <label class="visually__hidden" for="rating-terribly">Terribly</label>
+            <input class="rating__star" id="raiting-terribly" type="radio"  name="star" value="1">
+            
+            <label class="visually__hidden" for="rating-bad">Bad</label>
+            <input class="rating__star" id="raiting-bad" type="radio" name="star" value="2">
+            
+            <label class="visually__hidden" for="rating-normal">Normal</label>
+            <input class="rating__star" id="rating-normal" type="radio"  name="star" value="3">
+           
+            <label class="visually__hidden" for="raiting-good">Good</label>
+            <input class="rating__star" id="rating-good" type="radio"  name="star" value="4">
+           
+            <label class="visually__hidden" for="rating-excellent">Excellent</label> <input class="rating__star" id="rating-excellent" type="radio"  name="star" value="5">
+          
+           <div class="footer__rating-legend">Company Rating</div>
+           
+            </div>
+         
         </fieldset>
         
       </div>  
         
-        
-        
-    
     <p class="footer__bottom-subtitle">Copyright © 2018 Dlk • Design Life Kids</p>
    <a class="footer__title-link" href="#"><p class="footer__title-web">Web Design — Direct Line Development</p></a>
 </div>

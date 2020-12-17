@@ -93,7 +93,7 @@
         </div>
     </section>
     </main>
-   <footer class="footer">
+    <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__navigation">
@@ -156,27 +156,34 @@
    <div class="footer__bottom">
     <div class="footer__bottom-rating">
        
-        <fieldset class="footer__rating">
-         
-         <legend class="footer__caption">Company Rating</legend>
-         
-         <div class="footer__grup">
-             
-            <input class="footer__star" type="radio" name="star" value="1" aria-label="Ужасно">
-            <input class="footer__star" type="radio" name="star" value="2" aria-label="Сносно">
-            <input class="footer__star" type="radio" name="star" value="3" aria-label="Нормально">
-            <input class="footer__star" type="radio" name="star" value="4" aria-label="Хорошо">
-            <input class="footer__star" type="radio" name="star" value="5" aria-label="Отлично">
-            <div class="footer__focus"></div>
-         </div>
+       <fieldset class="footer__rating">
         
+         <div class="footer__rating-grup">
+          
+           <span class="visually__hidden">Company Rating</span>
+         
+            <label class="visually__hidden" for="rating-terribly">Terribly</label>
+            <input class="rating__star" id="raiting-terribly" type="radio"  name="star" value="1">
+            
+            <label class="visually__hidden" for="rating-bad">Bad</label>
+            <input class="rating__star" id="raiting-bad" type="radio" name="star" value="2">
+            
+            <label class="visually__hidden" for="rating-normal">Normal</label>
+            <input class="rating__star" id="rating-normal" type="radio"  name="star" value="3">
+           
+            <label class="visually__hidden" for="raiting-good">Good</label>
+            <input class="rating__star" id="rating-good" type="radio"  name="star" value="4">
+           
+            <label class="visually__hidden" for="rating-excellent">Excellent</label> <input class="rating__star" id="rating-excellent" type="radio"  name="star" value="5">
+          
+           <div class="footer__rating-legend">Company Rating</div>
+           
+            </div>
+         
         </fieldset>
         
       </div>  
         
-        
-        
-    
     <p class="footer__bottom-subtitle">Copyright © 2018 Dlk • Design Life Kids</p>
    <a class="footer__title-link" href="#"><p class="footer__title-web">Web Design — Direct Line Development</p></a>
 </div>
